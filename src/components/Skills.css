@@ -46,7 +46,6 @@
 
 /* Light Mode Skills */
 .light-mode .skills-section {
-  background: #f5f5f5;
   color: #222;
 }
 
@@ -63,7 +62,6 @@
 
 /* Dark Mode Skills */
 .dark-mode .skills-section {
-  background: #111;
   color: #eee;
 }
 
@@ -88,3 +86,13 @@
     padding: 10px;
   }
 }
+
+/* Express icon fix */
+.dark-mode .express-icon {
+  color: #fff !important; /* White in dark mode */
+}
+
+.light-mode .express-icon {
+  color: #000 !important; /* Black in light mode */
+}
+

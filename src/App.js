@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 import { FaSun, FaMoon } from "react-icons/fa";
+import Achievements from './components/Achievements';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Achievements/>
         <Contact />
         <Footer />
     </div>

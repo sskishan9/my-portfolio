@@ -9,14 +9,15 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Add background on scroll
+  // Close menu on scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      if (isOpen) setIsOpen(false); // Close hamburger when scrolling
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen]);
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
@@ -27,6 +28,7 @@ const Navbar = () => {
         <Link activeClass="active" to="skills" smooth={true} duration={500} spy={true} onClick={() => setIsOpen(false)}>Skills</Link>
         <Link activeClass="active" to="projects" smooth={true} duration={500} spy={true} onClick={() => setIsOpen(false)}>Projects</Link>
         <Link activeClass="active" to="experience" smooth={true} duration={500} spy={true} onClick={() => setIsOpen(false)}>Experience</Link>
+        <Link activeClass="active" to="achievements" smooth={true} duration={500} spy={true} onClick={() => setIsOpen(false)}>Achievements</Link>
         <Link activeClass="active" to="contact" smooth={true} offset={-70} duration={500} spy={true} onClick={() => setIsOpen(false)}>Contact</Link>
       </div>
 

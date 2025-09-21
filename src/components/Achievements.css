@@ -1,0 +1,75 @@
+.achievements-section {
+  padding: 80px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.achievements-section h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: inherit;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.achievement-card {
+  background: #fff;
+  color: #222;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  color: #00bcd4;
+  margin-bottom: 12px;
+}
+
+.award-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.award-description {
+  font-size: 0.95rem;
+  color: gray;
+  margin-bottom: 8px;
+}
+
+.award-year {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Dark Mode */
+.dark-mode .achievement-card {
+  background: #1a1a1a;
+  color: #eee;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.dark-mode .achievement-card:hover {
+  box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+}
+
+.dark-mode .award-description {
+  color: #ccc;
+}
+
+.dark-mode .award-year {
+  color: #999;
+}

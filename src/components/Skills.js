@@ -15,7 +15,7 @@ const Skills = () => {
     ],
     Backend: [
       { name: "Node.js", icon: <FaNodeJs color="#68A063" /> },
-      { name: "Express.js", icon: <SiExpress color="#000" /> },
+      { name: "Express.js", icon: <SiExpress className="express-icon" color="#000" /> },
       { name: "Java", icon: <FaDatabase color="#f29111" /> } // using DB icon for Java (can be swapped with a better one)
     ],
     Databases: [
